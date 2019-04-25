@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context="com.kopabranch.Loans.SecondLoaning">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Your laon limit is KSH 500 to KSH 3,500"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:text="Loan Details"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Do you have any outstanding loan from any money lender?"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_yes_second"
+                    android:textColor="@color/Green"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_no_second"
+                    android:text="No"
+                    android:textColor="@color/red"
+                    android:layout_marginLeft="90dp"/>
+            </RadioGroup>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true"
+                app:cardBackgroundColor="@color/bg_screen3"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:background="@color/bg_screen3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:text="Amount details"
+                        android:layout_gravity="center"/>
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:hint="Amount"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_gravity="center"
+                        android:id="@+id/edt_amount"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape"/>
+                    <EditText
+                        android:layout_width="300dp"
+                        android:layout_height="45dp"
+                        android:hint="Payment period(2-30 Days)"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textAlignment="center"
+                        android:inputType="number"
+                        android:layout_gravity="center"
+                        android:id="@+id/edt_period"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/shape"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btn_submit_second"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:textSize="20dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:theme="@style/PrimaryButtonFour"
+                app:srcCompat="@drawable/ic_action_go_foward" />
+
+
+            <com.google.android.gms.ads.AdView
+                android:layout_marginTop="60dp"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView_secondloaning"
+                android:layout_gravity="bottom|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-7987686181413584/9492092199">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

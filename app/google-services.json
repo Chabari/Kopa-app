@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "215208325147",
+    "firebase_url": "https://kopabranch.firebaseio.com",
+    "project_id": "kopabranch",
+    "storage_bucket": "kopabranch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215208325147:android:5c5456b92663dc48",
+        "android_client_info": {
+          "package_name": "com.kopabranch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf_v681o5SIab1fTEIF8jEZThUm0nLdWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215208325147-rcgbarvnlbigps706vnl83vej4gta14g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

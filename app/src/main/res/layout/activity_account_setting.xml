@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context="com.kopabranch.Account.AccountSetting">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fitsSystemWindows="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:textSize="45dp"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="BoraLoan"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name(As per ID)"
+                android:layout_marginTop="50dp"
+                android:textColorHint="@color/white">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_fullname"
+                    android:textColor="@color/white"
+                    android:inputType="textPersonName"
+                    android:drawableRight="@drawable/ic_action_fullname"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID Number"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/white">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_idnumber"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:drawableRight="@drawable/ic_action_idnumber"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/white">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_phonenumber"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:drawableRight="@drawable/ic_action_phone"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_submit"
+                android:layout_gravity="center"
+                android:theme="@style/PrimaryButtonFour"
+                android:text="Submit"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:elevation="10dp"
+                />
+
+
+
+
+            <com.google.android.gms.ads.AdView
+                android:layout_marginTop="30dp"
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView_accountsetting"
+                android:layout_gravity="bottom|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-7987686181413584/9492092199">
+            </com.google.android.gms.ads.AdView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
